@@ -1,0 +1,311 @@
+/* Start Global Rules */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.margin {
+    margin: 0;
+}
+
+ul a {
+    text-decoration: none;
+    color: rgb(110 110 110);
+}
+
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding-top: 10px;
+    height: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px #020912;
+}
+
+.header .row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+
+.row>img {
+    flex: 0 0 2%;
+    max-width: 2%;
+    height: 20px;
+}
+
+.header .row ul {
+    flex: 0 0 96%;
+    max-width: 96%;
+    list-style: none;
+    padding-left: 0;
+}
+
+.header ul li {
+    width: 9%;
+}
+
+.header ul li a:hover {
+    color: #000;
+}
+
+/* Image Section */
+.img-div {
+    height: 435px;
+    background-image: url("../images/TreeBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-text {
+    color: white;
+    text-align: center;
+    padding-top: 160px;
+}
+
+.img-text h1 {
+    font-weight: 100;
+}
+
+/* Content */
+.content {
+    justify-content: space-between;
+    width: 72%;
+    margin: auto;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.content>div {
+    flex: 0 0 32%;
+    min-width: 32%;
+    border: 1px solid lightgray;
+    margin-bottom: 50px;
+}
+
+.content .head {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.content .head p {
+    color: lightgray;
+    transition: all 1s ease-out;
+}
+
+.content .head p:hover {
+    font-size: 25px;
+    color: white;
+}
+
+.content .head h1 {
+    font-size: 70px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: 100;
+}
+
+.green {
+    background-color: #519251;
+}
+
+.blue {
+    background-color: #2C4985;
+}
+
+.black {
+    background-color: #000;
+}
+
+.content ul {
+    list-style: none;
+    padding-left: 0px;
+    background-color: #dbf1e9;
+}
+
+.content ul li {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1.5px solid blue;
+}
+
+.content ul li:hover {
+    background-color: white;
+}
+
+.content ul li:hover a {
+    color: #000;
+}
+
+.content form {
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.content form button {
+    background-color: unset;
+    border: 1px solid lightgray;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content form button:hover {
+    background-color: #000;
+    color: white;
+}
+
+/* Pagraphe Group */
+.pagraphe-group {
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pagraphe-group>div {
+    flex: 0 0 45%;
+    min-width: 45%;
+}
+
+.pagraphe-group div h2 {
+    font-weight: 100;
+    letter-spacing: 1.5px;
+}
+
+.pagraphe-group div p {
+    color: #6F7281;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Footer */
+.footer {
+    height: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #6F7281;
+    flex-wrap: wrap;
+}
+
+.footer p {
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer a:hover {
+    color: blue;
+}
+
+/************************ Responsive *********************************/
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .header {
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+
+    .header .row {
+        padding-left: 15px;
+    }
+
+    .row>img {
+        flex: 0 0 6%;
+        max-width: 6%;
+    }
+
+    .header .row ul {
+        flex: 0 0 92%;
+        max-width: 90%;
+        margin-left: 11px;
+    }
+
+    .header ul li {
+        width: 20%;
+    }
+
+    .img-div {
+        height: 350px;
+        background-attachment: fixed;
+    }
+
+    .img-text {
+        padding-top: 126px;
+    }
+
+    .content>div {
+        flex: 0 0 100%;
+        min-width: 100%;
+    }
+
+    .pagraphe-group>div {
+        flex: 0 0 100%;
+        min-width: 100%;
+    }
+
+    .pagraphe-group>div h2 {
+        font-size: 20px;
+    }
+
+    .footer {
+        height: initial;
+        padding: initial;
+        flex-direction: column;
+    }
+
+    .footer a {
+        margin-left: 8px;
+        margin-right: 11px;
+    }
+
+    .footer p {
+        line-height: 1.7;
+        font-size: 11px;
+    }
+}
+
+/* Extra small devices (Tablets and iPads, 601px up to 912px) */
+@media (min-width:601px) and (max-width:912px) {
+    .content {
+        width: 96%;
+    }
+
+    .pagraphe-group {
+        width: 90%;
+    }
+
+    .header .row ul {
+        flex: 0 0 94%;
+        max-width: 94%;
+    }
+
+    .header .row ul li {
+        width: 15%;
+    }
+
+    .row>img {
+        flex: 0 0 4%;
+        max-width: 3%;
+    }
+}
